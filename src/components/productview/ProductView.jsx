@@ -105,7 +105,7 @@ const navigate = useNavigate()
         }
         if (dispatch(addItem(newItem))) {
             dispatch(remove())
-            navigate('/github_Blackbrother/cart')
+            navigate('/cart')
         } else {
             alert('Fail')
         }

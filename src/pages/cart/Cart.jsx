@@ -30,12 +30,6 @@ const Cart = () => {
     setTotalPrice(cartItems.reduce( (total, item) => total + (Number(item.price)*Number(item.quantity)),0))
     setTotalProduct(cartItems.reduce( (total, item) => total + Number(item.quantity), 0))
   }, [cartItems])
-
-  // console.log(cartProducts)
-  // console.log(totalPrice)
-  // console.log(totalProducts)
-
-
   return (
     <Helmet title= 'Giỏ hàng'>
       <div className="cart">
@@ -55,7 +49,7 @@ const Cart = () => {
               Đặt hàng
             </Button>
 
-            <Link to='/github_Blackbrother/catalog'>
+            <Link to='/catalog'>
               <Button
                 size = 'block'
               >
@@ -79,5 +73,4 @@ const Cart = () => {
     </Helmet>
   )
 }
-
 export default Cart

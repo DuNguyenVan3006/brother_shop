@@ -65,7 +65,7 @@ const Header = () => {
 
 
         <div className="header__logo">
-          <Link to='/github_Blackbrother/'>
+          <Link to=''>
             MISSOUT
           </Link>
         </div>
@@ -105,7 +105,7 @@ const Header = () => {
             </div>
 
             <div className="header__menu__item header__menu__right__item">
-              <Link to='/github_Blackbrother/cart'>
+              <Link to='/cart'>
                 <i className="fa-solid fa-cart-shopping"></i>
                 <span> ({quantity})</span>
               </Link>

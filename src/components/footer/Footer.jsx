@@ -43,7 +43,6 @@ const footerCustomerLink = [
     },
 
 ]
-
 const Footer = () => {
   return (
     <footer className='footer'>
@@ -54,12 +53,10 @@ const Footer = () => {
                 smCol={1}
                 gap={10}
             >
-
                 <div>
                     <div className="footer__title">
                         <h4>Tổng đài hỗ trợ</h4>
                     </div>
-
                     <div className="footer__content">
                         <p>Liên hệ đặt hàng <strong>0982605778</strong></p>
                         <p>Thắc mắc đơn hàng <strong>0982605778</strong></p>
@@ -109,8 +106,6 @@ const Footer = () => {
                                 <img src={logo} className='footer__logo' alt="logo" />
                             </Link>
                         </p>
-
-
                         <p>
                             Hướng đến mục tiêu mang lại niềm vui ăn mặc mới mỗi ngày cho hàng triệu
                             người tiêu dùng Việt. Hãy cùng MISSOUT hướng đến một cuộc sống năng động, tích cực hơn.

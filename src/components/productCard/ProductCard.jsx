@@ -12,12 +12,11 @@ const ProductCard = props => {
     const dispatch = useDispatch();
   return (
     <div className='product-card'>
-        <Link to={`/github_Blackbrother/catalog/${props.slug}`}>
+        <Link to={`/catalog/${props.slug}`}>
             <div className="product-card__image">
                 <img src={props.img01} alt="ass" />
                 <img src={props.img02} alt="ass" />
             </div>
-
             <h3 className="product-card__name">
                 {props.title}
             </h3>

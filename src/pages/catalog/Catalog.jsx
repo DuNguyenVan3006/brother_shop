@@ -11,13 +11,11 @@ import size from '../../assets/fake-data/product-size'
 import category from '../../assets/fake-data/category'
 
 const Catalog = () => {
-
   const initFilter = {
     category: [],
     colors: [],
     size: []
   }
-
   const productList = productData.getAllProducts()
 
   const [product, setProduct] = useState(productList)
@@ -58,8 +56,6 @@ const Catalog = () => {
       }
     }
   }
-
-
   const clearFilter = () => {
     setFilter(initFilter)
   }
@@ -96,13 +92,9 @@ const Catalog = () => {
   useEffect(() => {
     updateProducts()
   }, [updateProducts])
-
-
   const filterRef = useRef()
-
   const showHideFilter = () => filterRef.current.classList.toggle('active')
   return (
-
     <Helmet title="Sản phẩm">
       <div className='catalog'>
         {/* {console.log(filter)} */}
@@ -127,14 +119,11 @@ const Catalog = () => {
                       onchange={(input) => filterSelect("CATEGORY", input.checked, item)}
                       checked={filter.category.includes(item.categorySlug)}
                     />
-
-
                   </div>
                 ))
               }
             </div>
           </div>
-
           <div className="catalog__filter__widget">
             <div className="catalog__filter__widget__title">
               Màu sắc
@@ -149,19 +138,15 @@ const Catalog = () => {
                       onchange={(input) => filterSelect("COLORS", input.checked, item)}
                       checked={filter.colors.includes(item.color)}
                     />
-
-
                   </div>
                 ))
               }
             </div>
           </div>
-
           <div className="catalog__filter__widget">
             <div className="catalog__filter__widget__title">
               Size
             </div>
-
             <div className="catalog__filter__widget__content">
               {
                 size.map((item, index) => (
@@ -176,7 +161,6 @@ const Catalog = () => {
               }
             </div>
           </div>
-
           <div className="catalog__filter__widget">
             <div className="catalog__filter__widget__content">
               <Button
@@ -187,10 +171,7 @@ const Catalog = () => {
               </Button>
             </div>
           </div>
-
-
         </div>
-
         <div className="catalog__filter__toggle">
           <Button
             size='sm'
@@ -199,13 +180,11 @@ const Catalog = () => {
             Bộ lọc
           </Button>
         </div>
-
         <div className="catalog__content">
           <InfinityList
             data={product}
           />
         </div>
-
       </div>
     </Helmet>
   )
